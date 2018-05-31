@@ -11,11 +11,11 @@ function offsetModificado() {//Llamando al offset ingresado, obtengo su valor
 document.getElementById('cifrando').addEventListener("click", ciframe);
 //Llamando ID 'cifrando' del botón de html y addEventListener tipo click para ejecutar función cifrar
 function ciframe() {//Function pulled from cipherWithOffset para el resultado
-  document.getElementById('resultado').innerHTML = (cipher.cipherWithOffset(offset)).encode(string);}
+  document.getElementById('resultado').innerHTML = (cipher.createCipherWithOffset(offset)).encode(string);}
 
 document.getElementById('decifrando').addEventListener("click", desciframe);
 //Llamando ID 'resultado' del botón de html y addEventListener tipo click para ejecutar función cifrar
 function desciframe() {//Function pulled from cipherWithOffset para el resultado
-  document.getElementById('resultado').innerHTML = (cipher.cipherWithOffset(offset)).decode(string);}
+  document.getElementById('resultado').innerHTML = (cipher.createCipherWithOffset(offset)).decode(string);}
 
 let string, offset;

@@ -27,7 +27,7 @@ window.cipher = {//Se declara objeto global windows con su propiedad cipher
       }
   return textoDecifrado;//resultado decifrado
   },
-  cipherWithOffset(offset) {//Función recibe offset y devuelve objetos con métodos encode y decode
+  createCipherWithOffset(offset) {//Función recibe offset y devuelve objetos con métodos encode y decode
     return {
       encode(string){return cipher.encode(offset, string);},//Método encode llamado en el resultado del index.js
       decode(string){return cipher.decode(offset, string);}//Método decode llamado en el resultado del index.js
