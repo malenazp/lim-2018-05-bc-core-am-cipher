@@ -1,0 +1,47 @@
+body{
+  background-image:url("https://csis-prod.s3.amazonaws.com/s3fs-public/publication/170208_encryption.jpg?frhoz.7X8WdGyo0RTs2.20NZ5s9UEPSG");
+}
+
+h2 {
+  color: white;
+}
+
+.stroke {
+margin: 20px;
+padding: 20px;
+text-align:center;
+color: #42BDB1;
+font-family: impact;
+font-size: 40px;
+letter-spacing: 10px;
+text-shadow: 1.5px  0px 0px black,
+             0px  1.5px 0px black,
+            -1.5px  0px 0px black,
+             0px -1.5px 0px black;
+}
+
+#package {
+  width:50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+  width:100%;
+}
+
+.instructions {
+font-size: 15px;
+font-family: verdana;
+color: white;
+text-shadow: 1.5px  0px 0px black,
+             0px  1.5px 0px black,
+            -1.5px  0px 0px black,
+             0px -1.5px 0px black;
+}
+
+.instructions2 {
+font-size: 15px;
+font-family: verdana;
+color: black;
+}

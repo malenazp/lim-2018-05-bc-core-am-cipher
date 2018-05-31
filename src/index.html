@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+	<head>
+		<meta charset="utf-8" />
+		<title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   </head>
   <body>
-    <div id="root"></div>
+    <div id="package">
+		<h2 class="stroke" >RETO LABORATORIA<br>
+    CIFRADO CÉSAR</h2>
+    <p class="instructions">Esta página le permite transcribir escritos con el método de cifrado César. Siga las instrucciones: <br>
+    1. Ingrese el texto en el cuadro en blanco.<br>
+    2. Ingrese el número de espacios a saltar en el alfabeto (Offset).<br>
+    3. Pulse el botón de la acción que desee usar: Cifrar o Decifrar.
+    </p>
+    <p class="instructions">Ingresa el texto que desea cifrar/decifrar:</p>
+    <textarea class="center" id="texto" placeholder="Escriba lo que desea cifrar ó decifrar aquí" rows="5" cols="10"></textarea>
+    <p class="instructions">Ingrese un offset:</p>
+    <input type="number" id="clave"value="0" min="0" max="33" /><br><br>
+    <button type="button" class="button" id="cifrando">Cifrar</button>
+    <button type="button" class="button" id="decifrando">Descifrar</button>
+    <div class="contenedor"><br><span id="resultado" class="instructions2">Mira tu texto cifrado/decifrado aquí!</span></div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
